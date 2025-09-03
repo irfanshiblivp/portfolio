@@ -1,1 +1,167 @@
-<html><head><title>irfan</title></head><body><h1>This page is taken by irfan shibli</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Reserved by Irfan</title>
+  <meta name="description" content="This page is taken by Irfan." />
+  <meta name="robots" content="noindex" />
+
+  <!-- Open Graph (nice preview if shared) -->
+  <meta property="og:title" content="This page is taken by Irfan" />
+  <meta property="og:description" content="Reserved / under control of Irfan." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg1:#0f172a;     /* slate-900 */
+      --bg2:#111827;     /* gray-900  */
+      --accent:#38bdf8;  /* sky-400   */
+      --accent2:#a78bfa; /* violet-400*/
+      --text:#e5e7eb;    /* gray-200  */
+      --muted:#9ca3af;   /* gray-400  */
+      --card:#0b1220cc;  /* translucent */
+      --ring:#334155;    /* slate-700 */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 20% 10%, #0ea5e955, transparent 60%),
+                  radial-gradient(1000px 900px at 80% 90%, #8b5cf655, transparent 60%),
+                  linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding:24px;
+    }
+
+    .card{
+      width:min(680px, 92vw);
+      background:var(--card);
+      border:1px solid var(--ring);
+      border-radius:24px;
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.35),
+        inset 0 0 0 1px rgba(255,255,255,.02);
+      padding:32px 28px;
+      backdrop-filter: blur(10px);
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .glow{
+      position:absolute;
+      inset: -40% -40% auto auto;
+      width:320px; height:320px;
+      background: conic-gradient(from 90deg, var(--accent), var(--accent2), var(--accent));
+      filter: blur(60px) opacity(.28);
+      border-radius:50%;
+      animation: spin 14s linear infinite;
+      pointer-events:none;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.4rem .8rem;
+      border:1px solid var(--ring);
+      border-radius:999px;
+      font-size:.9rem;
+      letter-spacing:.02em;
+      color:var(--muted);
+      background:rgba(2,6,23,.6);
+      margin-bottom:16px;
+    }
+    .icon{
+      width:18px; height:18px; display:inline-block;
+    }
+
+    h1{
+      margin:6px 0 10px;
+      font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+      line-height:1.1;
+      letter-spacing:.01em;
+    }
+    p{
+      margin: 0 auto;
+      color:var(--muted);
+      font-size: clamp(1rem, .6vw + .9rem, 1.125rem);
+      max-width:48ch;
+    }
+
+    .footer{
+      margin-top:22px;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.7rem 1rem;
+      border-radius:12px;
+      border:1px solid var(--ring);
+      background:rgba(2,6,23,.6);
+      color:var(--text);
+      text-decoration:none;
+      transition: transform .08s ease, border-color .2s ease, background .2s ease;
+      font-weight:600;
+    }
+    .btn:active{ transform: translateY(1px) }
+    .btn:hover{ border-color:#475569; background:rgba(2,6,23,.75) }
+
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      background: rgba(148,163,184,.12);
+      border:1px solid var(--ring);
+      padding:.25rem .5rem;
+      border-radius:8px;
+      color:#cbd5e1;
+    }
+
+    /* Respect user dark/light prefs just in case */
+    @media (prefers-color-scheme: light){
+      :root{ --text:#0b1220; --muted:#475569; --card:#ffffffcc; --ring:#e5e7eb }
+      body{ color:var(--text) }
+      .badge, .btn{ background:#ffffffb3 }
+      .mono{ color:#0f172a; background:#f1f5f9; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Reserved Page">
+    <div class="glow" aria-hidden="true"></div>
+
+    <span class="badge" aria-label="status badge">
+      <!-- lock icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M7 10V8a5 5 0 0 1 10 0v2" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="4.75" y="10" width="14.5" height="9.5" rx="2" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="12" cy="14.75" r="1.25" fill="currentColor"/>
+      </svg>
+      Reserved
+    </span>
+
+    <h1>This page is taken by <span class="mono">Irfan</span></h1>
+    <p>
+      You’ve reached a reserved address. If you were looking for a specific project,
+      try the default GitHub Pages path:
+      <span class="mono">irfanshiblivp.github.io/&lt;repo-name&gt;</span>.
+    </p>
+
+    <div class="footer">
+      <!-- Optional buttons; update hrefs or remove if not needed -->
+      <a class="btn" href="https://irfanshibli.me" rel="noopener">Go to Main Site</a>
+      <a class="btn" href="https://github.com/irfanshiblivp" rel="noopener">View GitHub</a>
+    </div>
+  </main>
+</body>
+</html>
